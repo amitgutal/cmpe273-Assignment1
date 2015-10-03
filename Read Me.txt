@@ -1,0 +1,21 @@
+Read Me File 
+
+The Server displays a ticker for some instruments which is refreshed every 3 seconds 
+
+For running the client type below command
+
+Eg :  C:\go run Client.go GOOG:30%,YHOO:40%,10000  
+  
+       where GOOG - Stock Code
+	         30  - Percentage to be bought of the budget
+			 YHOO - Stock Code 
+			 40 -  Percentage to be bought of the budget
+			 10000 - The Total budget
+			 
+	Multiple stocks can be passed by using "," delimiter. 
+	
+To get the Portfolio request type 
+
+    C:\go run Client {Trade_Number}
+	
+	
