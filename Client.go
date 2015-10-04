@@ -137,6 +137,12 @@ func main() {
 	id = &TradeDetails{T_id}
 	err = c.Call("Arith.GetTradeDetails",id,&reply)
 	
+	if reply.TradeId == 0 { 
+	
+	fmt.Println("Invalid Trade ID")
+	return
+	}
+	
 	fmt.Println("Trade ID :",reply.TradeId)
 	fmt.Print("Stocks :")
 	
